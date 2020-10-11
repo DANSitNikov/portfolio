@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<header>
+    <h1>!Welcome!</h1>
+    <button id="show-instruction">Click to show instruction</button>
+</header>
+<div class="wrapper">
+    <div class="view-result">
+        <input id="view-res" placeholder="0" disabled>
+    </div>
+    <div class="buttons">
+        <div class="first-row">
+            <span class="delete">DEL</span>
+            <span class="delete">AC</span>
+            <span class="operation">/</span>
+            <span class="operation">*</span>
+        </div>
+        <div class="second-row">
+            <span class="numbers">7</span>
+            <span class="numbers">8</span>
+            <span class="numbers">9</span>
+            <span class="operation">-</span>
+        </div>
+        <div class="third-row">
+            <span class="numbers">4</span>
+            <span class="numbers">5</span>
+            <span class="numbers">6</span>
+            <span class="operation">+</span>
+        </div>
+        <div class="fourth-row">
+            <span class="numbers">1</span>
+            <span class="numbers">2</span>
+            <span class="numbers">3</span>
+            <span class="operation">x<sup style="font-size: 20px">n</sup></span>
+        </div>
+        <div class="fifth-row">
+            <span class="zero numbers">0</span>
+            <span class="decimal">.</span>
+            <span class="mines">&#177;</span>
+            <span class="radix operation">√</span>
+        </div>
+        <div class="sixth-row">
+            <span class="show-result operation">=</span>
+        </div>
+    </div>
+</div>
+<div class="instruction">
+    <div class="instruction-plate">
+        <h2>INSTRUCTION </h2>
+        <div class="instruction-list">
+            <div class="instruction-item">
+                <p>1) DEL - удаляет последнюю цифру числа (пример: 1233 => 123 => 12 => 1 => 0)</p>
+                <p>2) AC - полностью очищает поле результата</p>
+                <p>3) /, *, -, + - деление, умножение, вычитание, сложение</p>
+                <p>4) <span class="non-op">x<sup style="font-size: 20px">n</sup></span> - возведение в любую степень (сначала нужно ввести любое число, затем нужно выбрать операцию возведения в степень, а затем выбрать степень)</p>
+            </div>
+            <div class="instruction-item">
+                <p>5) &#177; - меняет знак перед числом; . - знак 'точка'</p>
+                <p>6) √ - квадратный корень (сначала выбираем число, затем тыкаем на операцию, и сразу покажется результат)</p>
+                <p>7) В процессе вычислений в поле результата может появиться данная надпись: <em>Error. Tab AC</em>. Это значит, что та операция которую вы хотели провести является некорректной (пример: корень из -9 = Error. Tab AC). Для дальнейшей работы нужно нажать AC</p>
+            </div>
+        </div>
+        <p class="hope">I hope you will like it
+            <svg height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g id="Smiling_Face_With_Smiling_Eyes" data-name="Smiling Face With Smiling Eyes"><g id="Flat"><path d="m256 512c-34.27 0-67.946-8.1-100.092-24.067-30.031-14.919-57.359-35.96-81.223-62.539-47.463-52.862-74.685-120.436-74.685-185.394 0-64.208 26.7-124.543 75.172-169.891 48.328-45.209 112.548-70.109 180.828-70.109s132.5 24.9 180.828 70.109c48.472 45.348 75.172 105.683 75.172 169.891 0 64.958-27.222 132.532-74.685 185.394-23.864 26.579-51.192 47.62-81.223 62.539-32.146 15.967-65.822 24.067-100.092 24.067z" fill="#ffcc80"/><path d="m470.68 109.135q1.3 13.258 1.32 26.865c0 150.221-121.779 272-272 272a270.944 270.944 0 0 1 -178.965-67.181 301.144 301.144 0 0 0 53.65 84.575c23.864 26.579 51.192 47.62 81.223 62.539 32.146 15.967 65.822 24.067 100.092 24.067s67.946-8.1 100.092-24.067c30.031-14.919 57.359-35.96 81.223-62.539 47.463-52.862 74.685-120.436 74.685-185.394a227.707 227.707 0 0 0 -41.32-130.865z" fill="#ffb74d"/><path d="m192 160a8 8 0 0 1 -8-8 24 24 0 0 0 -48 0 8 8 0 0 1 -16 0 40 40 0 0 1 80 0 8 8 0 0 1 -8 8z" fill="#424242"/><path d="m384 160a8 8 0 0 1 -8-8 24 24 0 0 0 -48 0 8 8 0 0 1 -16 0 40 40 0 0 1 80 0 8 8 0 0 1 -8 8z" fill="#424242"/><circle cx="440" cy="152" fill="#ffe4c0" r="24"/><circle cx="72" cy="152" fill="#ffe4c0" r="24"/><g fill="#ef5350"><path d="m256 320c-40.234 0-78.14-12.249-106.735-34.489-29.19-22.703-45.265-53.072-45.265-85.511a8 8 0 0 1 16 0c0 57.346 61.009 104 136 104s136-46.654 136-104a8 8 0 0 1 16 0c0 32.439-16.075 62.808-45.265 85.511-28.595 22.24-66.501 34.489-106.735 34.489z"/><path d="m432 220c-30.085 0-44.352-22.111-47.692-33.8a8 8 0 1 1 15.384-4.4c.258.857 6.971 22.2 32.308 22.2a8 8 0 0 1 0 16z"/><path d="m80 220a8 8 0 0 1 0-16c25.337 0 32.05-21.341 32.323-22.25a8 8 0 1 1 15.369 4.448c-3.34 11.691-17.607 33.802-47.692 33.802z"/></g><path d="m288 352h-64a8 8 0 0 1 0-16h64a8 8 0 0 1 0 16z" fill="#ffb74d"/></g></g></svg>
+        </p>
+        <p class="hope">Have a good day</p>
+        <div id="close" class="close-instruction">
+            <svg viewport="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <line x1="1" y1="11" x2="11" y2="1" stroke="black" stroke-width="2"></line>
+                <line x1="1" y1="1" x2="11" y2="11" stroke="black" stroke-width="2"></line>
+            </svg>
+        </div>
+        <div class="divider"></div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
