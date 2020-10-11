@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test english</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div id="help1"></div>
+<div id="help2"></div>
+<div class="modal_window_start" id="windowStart">
+    <div class="window_title">
+        <h2>Узнай свой уровень английского!</h2>
+    </div>
+    <div class="window_content">
+        <h3>Этот онлайн тест по английскому языку, позволяет точно определить Ваш уровень знания языка.
+
+            Тест состоит из 15 вопросов. На каждый вопрос предлагаются варианта ответа, один из которых является правильным. Выберите ответ, который считаете верным.</h3>
+        <p class="goodLuck">GOOD LUCK!!!</p>
+    </div>
+    <div class="window_footer_start">
+        <div id="start" class="btn_start">Start</div>
+    </div>
+</div>
+    <div class="modal_window" id="window1" data-modal>
+        <div class="window_title">
+            <h2>Узнай свой уровень английского!</h2>
+        </div>
+        <div class="window_content">
+            <h3>1) I don’t like this table. It … very small.</h3>
+            <div class="window_answers">
+                <div class="choose">
+                    <input class="q_one" type="checkbox" id="check5"/>
+                    <label for="check5">
+                        <div><i class="fa fa-check"></i></div><span class="question">was</span>
+                    </label>
+                </div>
+
+                <div class="choose">
+                    <input class="q_one" type="checkbox" id="check6"/>
+                    <label for="check6">
+                        <div><i class="fa fa-check"></i></div><span class="question">am</span>
+                    </label>
+                </div>
+
+                <div class="choose">
+                    <input class="q_one" type="checkbox" id="check7"/>
+                    <label for="check7">
+                        <div><i class="fa fa-check"></i></div><span class="question">is</span>
+                    </label>
+                </div>
+
+                <div class="choose">
+                    <input class="q_one" type="checkbox" id="check8"/>
+                    <label for="check8">
+                        <div><i class="fa fa-check"></i></div><span class="question">are</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="window_footer">
+            <div style="margin-left: auto" id="next1" class="btn_next">Next</div>
+        </div>
+    </div>
+
+<div class="modal_window" id="window2" data-modal>
+    <div class="window_title">
+        <h2>Узнай свой уровень английского!</h2>
+    </div>
+    <div class="window_content">
+        <h3>2) … you live in a house or in a flat?</h3>
+        <div class="window_answers">
+            <div class="choose">
+                <input class="q_two" type="checkbox" id="check9"/>
+                <label for="check9">
+                    <div><i class="fa fa-check"></i></div><span class="question">Does</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input class="q_two" type="checkbox" id="check10"/>
+                <label for="check10">
+                    <div><i class="fa fa-check"></i></div><span class="question">Did</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input class="q_two" type="checkbox" id="check11"/>
+                <label for="check11">
+                    <div><i class="fa fa-check"></i></div><span class="question">Do</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input class="q_two" type="checkbox" id="check12"/>
+                <label for="check12">
+                    <div><i class="fa fa-check"></i></div><span class="question">Will</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="window_footer">
+        <div id="prev2" class="btn_back">Prev</div>
+        <div id="next2" class="btn_next">Next</div>
+    </div>
+</div>
+
+<div class="modal_window" id="window3" data-modal>
+    <div class="window_title">
+        <h2>Узнай свой уровень английского!</h2>
+    </div>
+    <div class="window_content">
+        <h3>3) Our friends live abroad. But we often visit … .</h3>
+        <div class="window_answers">
+            <div class="choose">
+                <input class="q_three" type="checkbox" id="check13"/>
+                <label for="check13">
+                    <div><i class="fa fa-check"></i></div><span class="question">they</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input class="q_three" type="checkbox" id="check14"/>
+                <label for="check14">
+                    <div><i class="fa fa-check"></i></div><span class="question">we</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input class="q_three" type="checkbox" id="check15"/>
+                <label for="check15">
+                    <div><i class="fa fa-check"></i></div><span class="question">them</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input class="q_three" type="checkbox" id="check16"/>
+                <label for="check16">
+                    <div><i class="fa fa-check"></i></div><span class="question">you</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="window_footer">
+        <div id="prev3" class="btn_back">Prev</div>
+        <div id="next3" class="btn_next">Next</div>
+    </div>
+</div>
+<div class="modal_window" id="window4" data-modal>
+    <div class="window_title">
+        <h2>Узнай свой уровень английского!</h2>
+    </div>
+    <div class="window_content">
+        <h3>4) The picture hangs … the wall.</h3>
+        <div class="window_answers">
+            <div class="choose">
+                <input  class="q_four" type="checkbox" id="check17"/>
+                <label for="check17">
+                    <div><i class="fa fa-check"></i></div><span class="question">in</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input  class="q_four" type="checkbox" id="check18"/>
+                <label for="check18">
+                    <div><i class="fa fa-check"></i></div><span class="question">on</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input  class="q_four" type="checkbox" id="check19"/>
+                <label for="check19">
+                    <div><i class="fa fa-check"></i></div><span class="question">to</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input  class="q_four" type="checkbox" id="check20"/>
+                <label for="check20">
+                    <div><i class="fa fa-check"></i></div><span class="question">for</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="window_footer">
+        <div id="prev4" class="btn_back">Prev</div>
+        <div id="next4" class="btn_next">Next</div>
+    </div>
+</div>
+
+<div class="modal_window" id="window5" data-modal>
+    <div class="window_title">
+        <h2>Узнай свой уровень английского!</h2>
+    </div>
+    <div class="window_content">
+        <h3>5) What are you waiting …?</h3>
+        <div class="window_answers">
+            <div class="choose">
+                <input class="q_five" type="checkbox" id="check21"/>
+                <label for="check21">
+                    <div><i class="fa fa-check"></i></div><span class="question">for</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input class="q_five" type="checkbox" id="check22"/>
+                <label for="check22">
+                    <div><i class="fa fa-check"></i></div><span class="question">to</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input class="q_five" type="checkbox" id="check23"/>
+                <label for="check23">
+                    <div><i class="fa fa-check"></i></div><span class="question">on</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input class="q_five" type="checkbox" id="check24"/>
+                <label for="check24">
+                    <div><i class="fa fa-check"></i></div><span class="question">at</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="window_footer">
+        <div id="prev5" class="btn_back">Prev</div>
+        <div id="next5" class="btn_next">Next</div>
+    </div>
+</div>
+
+<div class="modal_window" id="window6" data-modal>
+    <div class="window_title">
+        <h2>Узнай свой уровень английского!</h2>
+    </div>
+    <div class="window_content">
+        <h3>6) … are you laughing? – Because it’s funny!</h3>
+        <div class="window_answers">
+            <div class="choose">
+                <input class="q_six" type="checkbox" id="check25"/>
+                <label for="check25">
+                    <div><i class="fa fa-check"></i></div><span class="question">When</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input class="q_six" type="checkbox" id="check26"/>
+                <label for="check26">
+                    <div><i class="fa fa-check"></i></div><span class="question">Why</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input class="q_six" type="checkbox" id="check27"/>
+                <label for="check27">
+                    <div><i class="fa fa-check"></i></div><span class="question">Where</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input class="q_six" type="checkbox" id="check28"/>
+                <label for="check28">
+                    <div><i class="fa fa-check"></i></div><span class="question">What</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="window_footer">
+        <div id="prev6" class="btn_back">Prev</div>
+        <div id="next6" class="btn_next">Next</div>
+    </div>
+</div>
+
+<div class="modal_window" id="window7" data-modal>
+    <div class="window_title">
+        <h2>Узнай свой уровень английского!</h2>
+    </div>
+    <div class="window_content">
+        <h3>7) I cut … when I was fixing the bike.</h3>
+        <div class="window_answers">
+            <div class="choose">
+                <input class="q_seven" type="checkbox" id="check29"/>
+                <label for="check29">
+                    <div><i class="fa fa-check"></i></div><span class="question">me</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input class="q_seven" type="checkbox" id="check30"/>
+                <label for="check30">
+                    <div><i class="fa fa-check"></i></div><span class="question">my</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input class="q_seven" type="checkbox" id="check31"/>
+                <label for="check31">
+                    <div><i class="fa fa-check"></i></div><span class="question">myself</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input class="q_seven" type="checkbox" id="check32"/>
+                <label for="check32">
+                    <div><i class="fa fa-check"></i></div><span class="question">I</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="window_footer">
+        <div id="prev7" class="btn_back">Prev</div>
+        <div id="next7" class="btn_next">Next</div>
+    </div>
+</div>
+
+<div class="modal_window" id="window8" data-modal>
+    <div class="window_title">
+        <h2>Узнай свой уровень английского!</h2>
+    </div>
+    <div class="window_content">
+        <h3>8) Oh, you … your hairstyle! You look cute.</h3>
+        <div class="window_answers">
+            <div class="choose">
+                <input class="q_eight" type="checkbox" id="check33"/>
+                <label for="check33">
+                    <div><i class="fa fa-check"></i></div><span class="question">changed</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input class="q_eight" type="checkbox" id="check34"/>
+                <label for="check34">
+                    <div><i class="fa fa-check"></i></div><span class="question">have changed</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input class="q_eight" type="checkbox" id="check35"/>
+                <label for="check35">
+                    <div><i class="fa fa-check"></i></div><span class="question">had changed</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input class="q_eight" type="checkbox" id="check36"/>
+                <label for="check36">
+                    <div><i class="fa fa-check"></i></div><span class="question">were changing</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="window_footer">
+        <div id="prev8" class="btn_back">Prev</div>
+        <div id="next8" class="btn_next">Next</div>
+    </div>
+</div>
+
+<div class="modal_window" id="window9" data-modal>
+    <div class="window_title">
+        <h2>Узнай свой уровень английского!</h2>
+    </div>
+    <div class="window_content">
+        <h3>9) I … serials. I think they are stupid.</h3>
+        <div class="window_answers">
+            <div class="choose">
+                <input class="q_nine" type="checkbox" id="check37"/>
+                <label for="check37">
+                    <div><i class="fa fa-check"></i></div><span class="question">not watch</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input class="q_nine" type="checkbox" id="check38"/>
+                <label for="check38">
+                    <div><i class="fa fa-check"></i></div><span class="question">don’t watch</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input class="q_nine" type="checkbox" id="check39"/>
+                <label for="check39">
+                    <div><i class="fa fa-check"></i></div><span class="question">am not watching</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input class="q_nine" type="checkbox" id="check40"/>
+                <label for="check40">
+                    <div><i class="fa fa-check"></i></div><span class="question">is not watching</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="window_footer">
+        <div id="prev9" class="btn_back">Prev</div>
+        <div id="next9" class="btn_next">Next</div>
+    </div>
+</div>
+
+<div class="modal_window" id="window10" data-modal>
+    <div class="window_title">
+        <h2>Узнай свой уровень английского!</h2>
+    </div>
+    <div class="window_content">
+        <h3>10) They … to spend summer in Greece.</h3>
+        <div class="window_answers">
+            <div class="choose">
+                <input class="q_ten" type="checkbox" id="check41"/>
+                <label for="check41">
+                    <div><i class="fa fa-check"></i></div><span class="question">were going</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input class="q_ten" type="checkbox" id="check42"/>
+                <label for="check42">
+                    <div><i class="fa fa-check"></i></div><span class="question">are going</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input class="q_ten" type="checkbox" id="check43"/>
+                <label for="check43">
+                    <div><i class="fa fa-check"></i></div><span class="question">am going</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input class="q_ten" type="checkbox" id="check44"/>
+                <label for="check44">
+                    <div><i class="fa fa-check"></i></div><span class="question">was going</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="window_footer">
+        <div id="prev10" class="btn_back">Prev</div>
+        <div id="next10" class="btn_next">Next</div>
+    </div>
+</div>
+
+<div class="modal_window" id="window11" data-modal>
+    <div class="window_title">
+        <h2>Узнай свой уровень английского!</h2>
+    </div>
+    <div class="window_content">
+        <h3>11) They want … the house in the countryside.</h3>
+        <div class="window_answers">
+            <div class="choose">
+                <input class="q_eleven" type="checkbox" id="check45"/>
+                <label for="check45">
+                    <div><i class="fa fa-check"></i></div><span class="question">building</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input class="q_eleven" type="checkbox" id="check46"/>
+                <label for="check46">
+                    <div><i class="fa fa-check"></i></div><span class="question">to build</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input class="q_eleven" type="checkbox" id="check47"/>
+                <label for="check47">
+                    <div><i class="fa fa-check"></i></div><span class="question">to building</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input class="q_eleven" type="checkbox" id="check48"/>
+                <label for="check48">
+                    <div><i class="fa fa-check"></i></div><span class="question">build</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="window_footer">
+        <div id="prev11" class="btn_back">Prev</div>
+        <div id="next11" class="btn_next">Next</div>
+    </div>
+</div>
+
+<div class="modal_window" id="window12" data-modal>
+    <div class="window_title">
+        <h2>Узнай свой уровень английского!</h2>
+    </div>
+    <div class="window_content">
+        <h3>12) My classmate … the best project in Chemistry. He’s very clever.</h3>
+        <div class="window_answers">
+            <div class="choose">
+                <input class="q_twelve" type="checkbox" id="check49"/>
+                <label for="check49">
+                    <div><i class="fa fa-check"></i></div><span class="question">did</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input class="q_twelve" type="checkbox" id="check50"/>
+                <label for="check50">
+                    <div><i class="fa fa-check"></i></div><span class="question">have done</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input class="q_twelve" type="checkbox" id="check51"/>
+                <label for="check51">
+                    <div><i class="fa fa-check"></i></div><span class="question">has done</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input class="q_twelve" type="checkbox" id="check52"/>
+                <label for="check52">
+                    <div><i class="fa fa-check"></i></div><span class="question">were doing</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="window_footer">
+        <div id="prev12" class="btn_back">Prev</div>
+        <div id="next12" class="btn_next">Next</div>
+    </div>
+</div>
+
+<div class="modal_window" id="window13" data-modal>
+    <div class="window_title">
+        <h2>Узнай свой уровень английского!</h2>
+    </div>
+    <div class="window_content">
+        <h3>13) Now he … around Europe. He is not in the town.</h3>
+        <div class="window_answers">
+            <div class="choose">
+                <input class="q_thirteen" type="checkbox" id="check53"/>
+                <label for="check53">
+                    <div><i class="fa fa-check"></i></div><span class="question">travel</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input class="q_thirteen" type="checkbox" id="check54"/>
+                <label for="check54">
+                    <div><i class="fa fa-check"></i></div><span class="question">travels</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input class="q_thirteen" type="checkbox" id="check55"/>
+                <label for="check55">
+                    <div><i class="fa fa-check"></i></div><span class="question">is travelling</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input class="q_thirteen" type="checkbox" id="check56"/>
+                <label for="check56">
+                    <div><i class="fa fa-check"></i></div><span class="question">was travelling</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="window_footer">
+        <div id="prev13" class="btn_back">Prev</div>
+        <div id="next13" class="btn_next">Next</div>
+    </div>
+</div>
+
+<div class="modal_window" id="window14" data-modal>
+    <div class="window_title">
+        <h2>Узнай свой уровень английского!</h2>
+    </div>
+    <div class="window_content">
+        <h3>14) I … the winner! I want it most of all.</h3>
+        <div class="window_answers">
+            <div class="choose">
+                <input class="q_fourteen" type="checkbox" id="check57"/>
+                <label for="check57">
+                    <div><i class="fa fa-check"></i></div><span class="question">will become</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input class="q_fourteen" type="checkbox" id="check58"/>
+                <label for="check58">
+                    <div><i class="fa fa-check"></i></div><span class="question">become</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input class="q_fourteen" type="checkbox" id="check59"/>
+                <label for="check59">
+                    <div><i class="fa fa-check"></i></div><span class="question">am becoming</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input class="q_fourteen" type="checkbox" id="check60"/>
+                <label for="check60">
+                    <div><i class="fa fa-check"></i></div><span class="question">became</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="window_footer">
+        <div id="prev14" class="btn_back">Prev</div>
+        <div id="next14" class="btn_next">Next</div>
+    </div>
+</div>
+
+<div class="modal_window" id="window15" data-modal>
+    <div class="window_title">
+        <h2>Узнай свой уровень английского!</h2>
+    </div>
+    <div class="window_content">
+        <h3>15) Next Monday by 10 o’clock in the morning we … all the exams.</h3>
+        <div class="window_answers">
+            <div class="choose">
+                <input class="q_fifteen" type="checkbox" id="check61"/>
+                <label for="check61">
+                    <div><i class="fa fa-check"></i></div><span class="question">will have passed</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input class="q_fifteen" type="checkbox" id="check62"/>
+                <label for="check62">
+                    <div><i class="fa fa-check"></i></div><span class="question">will pass</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input class="q_fifteen" type="checkbox" id="check63"/>
+                <label for="check63">
+                    <div><i class="fa fa-check"></i></div><span class="question">will be passing</span>
+                </label>
+            </div>
+
+            <div class="choose">
+                <input class="q_fifteen" type="checkbox" id="check64"/>
+                <label for="check64">
+                    <div><i class="fa fa-check"></i></div><span class="question">are passing</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="window_footer">
+        <div id="prev15" class="btn_back">Prev</div>
+        <div id="next15" class="btn_next">Finish</div>
+    </div>
+</div>
+
+<div class="modal_window" id="window16">
+    <div class="window_title">
+        <h2>Твой результат!</h2>
+    </div>
+    <div class="window_content" id="finishRes"></div>
+    <div class="window_footer_start">
+        <div id="finish" class="btn_start">Try Again</div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
