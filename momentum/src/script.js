@@ -340,7 +340,7 @@ const temp = document.querySelector('.whether-temperature'),
     humidity = document.querySelector('.humidity');
 
 function whetherInYourCity() {
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city.textContent}&appid=5e331458e96bed7f939354aa4cec4da2`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city.textContent}&appid=5e331458e96bed7f939354aa4cec4da2`)
         .then(response => response.json())
         .then(data => {
             console.log(data);
