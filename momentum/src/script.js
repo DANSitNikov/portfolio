@@ -164,8 +164,8 @@ function changeGood() {
         }
         document.body.style.color = 'white';
         good.innerHTML = 'Good evening,';
-    } else if (hour >= 24 && hour < 6) {
-        if (hour === 24) {
+    } else if (hour >= 0 && hour < 6) {
+        if (hour === 0) {
             document.body.style.backgroundImage = `url(${allImages[18]})`;
             checker = 19;
         } else if (hour === 1) {
@@ -256,14 +256,14 @@ document.querySelector('.change-quote').addEventListener('click', () => {
 //change background
 
 function imgChanger(num) {
-    document.body.style.transitionDelay = '0.3s';
+    document.body.style.transitionDelay = '1s';
     document.body.style.transitionDuration = '0.7s';
     document.body.style.backgroundImage = `url(${allImages[num]})`;
 }
 
 changer.addEventListener('click', () => {
     changer.style.transform = `rotate(${degrees*60}deg)`;
-    changer.style.transitionDuration = '1s';
+    changer.style.transitionDuration = '1.5s';
     degrees += 3;
     imgChanger(checker);
     checker++;
@@ -349,6 +349,8 @@ function whetherInYourCity() {
                 temp.textContent = '';
                 descript.textContent = '';
                 icon.className = 'weather-icon owf';
+                windSpeed.textContent = ``;
+                humidity.textContent = ``;
             } else {
                 temp.textContent = Math.round(data.main['temp']) - 273 + '°C';
                 descript.textContent = `${data.weather[0].description}`;

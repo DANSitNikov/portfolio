@@ -80,7 +80,7 @@ function doSomeOperation(operation) {
         radixControl = '-';
         result.value = globalNumber;
         if (result.value == 'NaN') {
-            result.value = 'Error. Tab AC';
+            result.value = 'Error. Click AC';
         }
     } else {
         newOrCurrent = true;

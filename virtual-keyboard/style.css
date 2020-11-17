@@ -1,0 +1,255 @@
+.use-keyboard-input {
+    display: block;
+    width: 90%;
+    margin: 30px auto;
+    padding: 10px;
+    font-size: 20px;
+    height: calc(100vh - 380px);
+    min-height: 300px;
+    outline: none;
+    border: 2px solid black;
+}
+
+.keyboard {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 6px 0;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    user-select: none;
+    transition: bottom 0.4s;
+    background: #949494;
+}
+
+.keyboard--hidden {
+    bottom: -100%;
+}
+
+.keyboard__keys {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.keyboard__keys-item {
+    text-align: center;
+}
+
+.keyboard__key {
+    height: 45px;
+    margin: 3px;
+    border-radius: 4px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 1.05rem;
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    width: 84px;
+    background: -webkit-linear-gradient(left, #CCC 0%, #D8D8D8 20px, #E5E5E5 35px, #FAFAFA 100%);
+    padding-top: 8px;
+    box-shadow: 1px 2px 2px #2b2b2c;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: black;
+}
+
+.keyboard__key:active {
+    background: -webkit-linear-gradient(left, #C8C8C8 0%, #D8D8D8 20px, #E5E5E5 35px, #FAFAFA 100%);
+    box-shadow: 1px -3px 6px rgba(100, 100, 100, 0.6), -3px -3px 6px rgba(100, 100, 100, 0.3), 4px -2px 6px rgba(100, 100, 100, 0.3);
+    top: 1.5px;
+}
+
+.active {
+    background: yellow;
+    top: 2px;
+    z-index: 10;
+}
+
+.keyboard__key--active::after {
+    background: #08ff00;
+}
+
+.additionToKeyboard {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+}
+
+.active-micro {
+    background: orange;
+    z-index: 10;
+}
+
+.active-shift {
+    background: greenyellow;
+    z-index: 10;
+}
+
+.backspace {
+    width: 135px;
+}
+
+.tab{
+    width: 135px;
+}
+
+.Enter, .Caps {
+    width: 155px;
+}
+
+.shift {
+    width: 225px;
+}
+
+.space {
+    width: 595px;
+}
+
+.ctrl {
+    width: 125.5px;
+}
+
+@media (max-width: 1350px) {
+    .keyboard__key {
+        width: 64px;
+    }
+
+    .backspace {
+        width: 115px;
+    }
+
+    .tab{
+        width: 115px;
+    }
+
+    .Enter, .Caps {
+        width: 125.5px;
+    }
+
+    .shift {
+        width: 189px;
+    }
+
+    .space {
+        width: 450px;
+    }
+
+    .ctrl {
+        width: 109px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .keyboard__key {
+        width: 44px;
+    }
+
+    .backspace {
+        width: 95px;
+    }
+
+    .tab{
+        width: 95px;
+    }
+
+    .Enter, .Caps {
+        width: 95px;
+    }
+
+    .shift {
+        width: 147px;
+    }
+
+    .space {
+        width: 300px;
+    }
+
+    .ctrl {
+        width: 93px;
+    }
+
+    .additionToKeyboard {
+        position: absolute;
+        top: 2px;
+        right: 3px;
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 779px) {
+    .keyboard__key {
+        width: 24px;
+    }
+
+    .backspace {
+        width: 55px;
+    }
+
+    .tab{
+        width: 55px;
+    }
+
+    .Enter, .Caps {
+        width: 55px;
+    }
+
+    .shift {
+        width: 85px;
+    }
+
+    .space {
+        width: 197px;
+    }
+
+    .ctrl {
+        width: 43px;
+    }
+
+    .additionToKeyboard {
+        position: absolute;
+        top: 0;
+        right: 2px;
+        transform: scale(0.8);
+    }
+}
+
+.words {
+    display: none;
+}
+
+.words {
+    max-width: 500px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem 1rem 5rem;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#d9eaf3), color-stop(4%, #fff)) 0 4px;
+    background-size: 100% 3rem;
+    position: relative;
+    line-height: 3rem;
+}
+
+p {
+    margin: 0 0 3rem;
+}
+
+.words:before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    top: 0;
+    left: 30px;
+    bottom: 0;
+    border: 1px solid;
+    border-color: transparent #efe4e4;
+}

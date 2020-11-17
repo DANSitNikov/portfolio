@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+  <title>virtual-keyboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="assets/favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <textarea class="use-keyboard-input" placeholder="Click here" x-webkit-speech=""></textarea>
+  <div class="words" contenteditable>
+  </div>
+  <div class="keyboard keyboard--hidden">
+    <div class="keyboard__keys">
+      <div class="keyboard__keys-item"></div>
+      <div class="keyboard__keys-item"></div>
+      <div class="keyboard__keys-item"></div>
+      <div class="keyboard__keys-item"></div>
+      <div class="keyboard__keys-item"></div>
+    </div>
+  </div>
+  <audio class="en" data-key="1" src="assets/keyboard1.wav"></audio>
+  <audio class="ru" data-key="1" src="assets/ru.wav"></audio>
+  <audio class="other" data-key="1" src="assets/shift.wav"></audio>
+  <script src="script.js" type="module"></script>
+</body>
+</html>
